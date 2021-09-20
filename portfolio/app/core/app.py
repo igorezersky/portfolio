@@ -83,6 +83,6 @@ class App:
         from portfolio.app.routes import index
         from portfolio.app.core import exceptions as _  # required for exceptions handlers connection
 
-        self.server.include_router(index.router, prefix='', tags=['index'])
+        self.server.include_router(index.router, tags=['index'])
 
         return self
