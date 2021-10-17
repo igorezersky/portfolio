@@ -21,11 +21,11 @@ setuptools.setup(
     version=__version__,
     author='Ihar Yazerski',
     author_email='ihar.yazerski@outlook.com',
-    description='Portfolio description',
+    description='My modest portfolio',
     include_package_data=True,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='',
+    url='https://igorezersky.digital/',
     packages=setuptools.find_packages(exclude=('tests*',)),
     install_requires=install_requires,
     classifiers=[
