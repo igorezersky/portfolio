@@ -9,7 +9,7 @@ tasks:
   up:
     - title: all
       pipeline:
-        - "docker network create --driver=bridge {PROJECT_NAME}-{ENV}"
+        - "docker network create --driver=bridge {PROJECT_SLUG}-{ENV}"
         - "docker-compose -f deploy/docker-compose-{ENV}.yml up -d"
   traefik:
     - title: all
@@ -20,4 +20,4 @@ tasks:
     - title: all
       pipeline:
         - "docker-compose -f deploy/docker-compose-{ENV}.yml down"
-        - "docker network rm {PROJECT_NAME}-{ENV}"
+        - "docker network rm {PROJECT_SLUG}-{ENV}"

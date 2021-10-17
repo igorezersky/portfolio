@@ -60,7 +60,7 @@ Create `.env` file in project root with environment variables:
 
 ```text
 ENV=dev
-PROJECT_NAME=portfolio
+PROJECT_SLUG=portfolio
 HOST=localhost
 PORT=8080
 ENABLE_CORS=True
@@ -71,7 +71,7 @@ What does each variable mean:
 
 * `ENV`: environment type (dev, prod), could contain any value, but for production please set `ENV=prod`
 
-* `PROJECT_NAME`: this name will be used for docker containers creation
+* `PROJECT_SLUG`: this name will be used for docker containers creation
 
 * `HOST`: backend host (e.g. localhost, project.dns.com)
 

@@ -8,9 +8,9 @@ WORKDIR /home/${PROJECT_USER}
 USER ${PROJECT_USER}
 
 # create project dir
-ARG PROJECT_NAME
-RUN mkdir ${PROJECT_NAME}
-WORKDIR /home/${PROJECT_USER}/${PROJECT_NAME}
+ARG PROJECT_SLUG
+RUN mkdir ${PROJECT_SLUG}
+WORKDIR /home/${PROJECT_USER}/${PROJECT_SLUG}
 RUN mkdir logs
 
 # install requirements
