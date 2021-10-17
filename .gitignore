@@ -119,3 +119,4 @@ logs/
 deploy/docker-compose-template-*.yml
 .vscode/
 .DS_Store
+.idea/
