@@ -2,6 +2,7 @@ __pycache__/
 _doc_build/
 .idea/
 doc/
+docs/
 .git/
 temp/
 specs/
@@ -18,3 +19,5 @@ data/
 logs/
 db/
 models/
+*.egg-info/
+.DS_Store/
