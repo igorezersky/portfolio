@@ -49,9 +49,9 @@ Use `pydeployhelp` package to build project image:
 foo@bar:~/portfolio$ pydeployhelp
 Enter deploy tasks from following: all | build up down: build
         ✓ processing deploy tasks: build
-Enter deploy targets from following: all | portfolio-db portfolio-backend: all
-        ✓ processing deploy targets: portfolio-db portfolio-backend
-Do you agree to start processing (yes or no)? [yes]: yes
+Enter deploy targets from following: all | portfolio-backend-dev: all
+        ✓ processing deploy targets: portfolio-backend-dev
+Do you agree to start processing (y/N)?: y
 ```
 
 ## Environment
@@ -99,7 +99,7 @@ Use `pydeployhelp` package to run project image:
 foo@bar:~/portfolio$ pydeployhelp
 Enter deploy tasks from following: all | build up down: up
         ✓ processing deploy tasks: up
-Enter deploy targets from following: all | portfolio-db portfolio-backend: all
-        ✓ processing deploy targets: portfolio-db portfolio-backend
-Do you agree to start processing (yes or no)? [yes]: yes
+Enter deploy targets from following: all | portfolio-backend-dev: all
+        ✓ processing deploy targets: portfolio-backend-dev
+Do you agree to start processing (y/N)?: y
 ```
