@@ -42,5 +42,5 @@ COPY --from=builder-image ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 # copy project files
-COPY LICENSE *.py *.in ./
-COPY portfolio portfolio
+COPY --chown=${PROJECT_USER} LICENSE *.py *.in ./
+COPY --chown=${PROJECT_USER} portfolio portfolio
