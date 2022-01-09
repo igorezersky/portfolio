@@ -3,7 +3,7 @@
 {% set PROJECT_ROOT = '/home/' ~ PROJECT_USER ~ '/' ~ PROJECT_SLUG %}
 {% set VIRTUAL_ENV = PROJECT_ROOT ~ '/venv' %}
 {% set REPLICAS_NUM = REPLICAS_NUM | default(1) %}
-{% set ENABLE_TRAEFIK = ENV == 'prod' %}
+{% set ENABLE_TRAEFIK = ENABLE_TRAEFIK or ENV == 'prod' %}
 {% set BACKEND_SERVICE_NAME = PROJECT_SLUG ~ '-backend-' ~ ENV %}
 
 version: "3"
