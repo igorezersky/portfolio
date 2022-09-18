@@ -21,3 +21,4 @@ db/
 models/
 *.egg-info/
 .DS_Store/
+deploy/images

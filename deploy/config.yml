@@ -28,8 +28,8 @@ tasks:
   deploy:
     - title: all
       pipeline:
-        - "mkdir images"
+        - "mkdir deploy/images"
         - "docker tag {PROJECT_SLUG}-backend:{ENV} {PROJECT_SLUG}-backend:prod"
-        - "docker save {PROJECT_SLUG}-backend:prod | gzip > images/{PROJECT_SLUG}_backend.tar.gz"
-        - "rsync -chavzP --stats images/* {PROD_SSH}:/data/images/."
-        - "ssh -t {PROD_SSH} 'cd /data/images; docker load < {PROJECT_SLUG}_backend.tar.gz"
+        - "docker save {PROJECT_SLUG}-backend:prod | gzip > deploy/images/{PROJECT_SLUG}_backend.tar.gz"
+        - "rsync -chavzP --stats deploy/images/* {PROD_SSH}:/data/images/."
+        - "ssh -t {PROD_SSH} 'cd /data/images; docker load < {PROJECT_SLUG}_backend.tar.gz'"
