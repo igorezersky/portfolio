@@ -2,7 +2,7 @@
 
 ## Overview
 
-ASGI RESTful API by [igorezersky/cookiecutter-api](https://github.com/igorezersky/cookiecutter-api)
+ASGI RESTful API by [iyazerski/cookiecutter-api](https://github.com/iyazerski/cookiecutter-api)
 
 ## Requirements
 
