@@ -1,6 +1,5 @@
 # linting
-flake8
-pylint
+ruff
 
 # debug
 ipython
